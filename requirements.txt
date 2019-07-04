@@ -1,0 +1,6 @@
+Cartopy==0.16.0
+xarray==0.10.8
+numpy==1.14.2
+glob2==0.6
+matplotlib==3.0.0
+
