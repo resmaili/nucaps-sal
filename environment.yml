@@ -6,7 +6,7 @@ dependencies:
     - python=3.6    # Python version 3.6
     - cartopy       # Geographic plotting toolkit
 #    - cython        # Transpile Python->C
-#    - dask          # Parallel processing library
+    - dask          # Parallel processing library
 #    - ipython       # IPython interpreter and tools
 #    - jupyter       # Jupyter federation architecture
     - matplotlib    # 2D plotting library
