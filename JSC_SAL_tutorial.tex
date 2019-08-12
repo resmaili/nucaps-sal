@@ -1,19 +1,7 @@
 
 % Default to the notebook output style
-
-
-
-
 % Inherit from the specified cell style.
-
-
-
-
-
 \documentclass[11pt]{article}
-
-
-
     \usepackage[T1]{fontenc}
     % Nicer default font (+ math font) than Computer Modern for most use cases
     \usepackage{mathpazo}
@@ -66,9 +54,6 @@
     \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
                                 % normalem makes italics be italics, not underlines
     \usepackage{mathrsfs}
-
-
-
 
     % Colors for the hyperref package
     \definecolor{urlcolor}{rgb}{0,.145,.698}
@@ -256,13 +241,9 @@
 \def\PYZrb{]}
 \makeatother
 
-
     % Exact colors from NB
     \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
     \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
-
-
-
 
     % Prevent overflowing lines due to hard-to-break entities
     \sloppy
@@ -279,18 +260,15 @@
     \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=.75in,rmargin=.75in}
 
 
-
     \begin{document}
-
-
     \maketitle
 
 
 \begin{figure}
 \centering
 \includegraphics{images/SAL.jpeg}
-\label{fig:sal}
 \caption{Figure \ref{fig:sal}: SAL on September 15, 2019}
+\label{fig:sal}
 \end{figure}
 
 \section{What is the Saharan Air
@@ -307,8 +285,7 @@ air quality over the Caribbean and eastern United States. This can increase alle
 
 Figure \ref{fig:sal} shows a SAL outbreak on September 15, 2018 using the VIIRS
 instrument from the Suomi NPP satellite. This outbreak reached the
-Caribbean on September 20, 2018. The SAL can be detected from space by examining visible and infrared imagery from a variety of satellite platforms, such as GOES-16, Meteosat-9/-10, Suomi NPP, NOAA-20, and MetOp A, B, C satellites. The horizontal extent of the SAL is visible in dust RGB imagery, channel differencing, Aerosol Optical Depth (AOD) retrievals. In particular, satellite sounders are useful for SAL detection because both the horizontal and vertical distribution of the dry air mass.
-
+Caribbean on September 20, 2018. The SAL can be detected from space by examining visible and infrared imagery from a variety of sensors on satellite platform, such as the ABI (GOES-16), SEVIRI (Meteosat-9/-10), VIIRS (Suomi NPP, NOAA-20), and AVHRR (MetOp-A, -B, -C). The horizontal extent of the SAL can be monitored using dust RGB imagery, channel differencing (e.g., 10.33 µm -- 12.30 µm), and Aerosol Optical Depth (AOD) retrievals. Additionally, microwave and infrared sounding (CrIS, ATMS, AMSU, and IASI) are particularly useful for SAL monitoring because sounder products can detect both the horizontal and vertical distribution of the dry air mass.
 
 \section{What is NUCAPS?}\label{what-is-nucaps}
 
@@ -727,9 +704,8 @@ presense of the SAL.
 \begin{figure}[h]
 \centering
 \includegraphics{images/20180920.15.NWAtlantic.SALgoes16split.png}
+\caption{Figure \ref{fig:split}: GOES-16 Split Window Difference on September 20, 2019}
 \label{fig:split}
-\caption{Figure \ref{fig:split}: GOES-16
-Split Window Difference on September 20, 2019}
 \end{figure}
 
 \end{document}
