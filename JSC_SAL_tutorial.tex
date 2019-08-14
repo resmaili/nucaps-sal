@@ -136,7 +136,10 @@
     % Document title
     \title{Monitoring the Saharan Air Layer using Satellite Applications}
     \author{Rebekah Esmaili, \href{mailto:rebekah@stcnet.com}{rebekah@stcnet.com}
-    \\ Science and Technology Corportation \\ \\ \href{https://mybinder.org/v2/gh/resmaili/nucaps-sal/master} {Click to Launch Code} }
+    \\ Science and Technology Corportation}
+
+    %\href{https://mybinder.org/v2/gh/resmaili/nucaps-sal/master} {Click to Launch Code} }
+
     \date{29 September 2019}
 
     % Pygments definitions
@@ -264,27 +267,33 @@
     \maketitle
 
 
+\begin{figure}[h!]
+\centering
+\href{https://mybinder.org/v2/gh/resmaili/nucaps-sal/master}{\includegraphics{images/badge_logo.jpg}}
+\caption*{\href{https://mybinder.org/v2/gh/resmaili/nucaps-sal/master}{This tutorial is interactive, click to launch code!}}
+\end{figure}
+
+
 \begin{figure}
 \centering
 \includegraphics{images/SAL.jpeg}
-\caption{Figure \ref{fig:sal}: SAL on September 15, 2019}
+\caption{Figure \ref{fig:sal}: A SAL outflow on September 15, 2019}
 \label{fig:sal}
 \end{figure}
 
 \section{What is the Saharan Air
 Layer?}\label{what-is-the-saharan-air-layer}
 
-The Saharan Air Layer (SAL) is a hot and dry pocket of air that
+The Saharan Air Layer (SAL) is a warm and dry pocket of air that
 originates over the Saharan Desert and propagates over the Atlantic. The
 SAL extends from 850-500mb and has very steep lapse rates, thus capping
 the moist, tropical marine air below. This can potentially suppress tropical
 cyclone formation. The SAL is a potential hazard because it can
-transport aerosols to populated regions across the Atlantic, reducing
+transport dust to populated regions across the Atlantic, reducing
 air quality over the Caribbean and eastern United States. This can increase allergies and asthma in sensitive populations.
 
-
-Figure \ref{fig:sal} shows a SAL outbreak on September 15, 2018 using the VIIRS
-instrument from the Suomi NPP satellite. This outbreak reached the
+Figure \ref{fig:sal} shows a SAL outflow on September 15, 2018 using the VIIRS
+instrument from the Suomi NPP satellite. This SAL event reached the
 Caribbean on September 20, 2018. The SAL can be detected from space by examining visible and infrared imagery from a variety of sensors on satellite platform, such as the ABI (GOES-16), SEVIRI (Meteosat-9/-10), VIIRS (Suomi NPP, NOAA-20), and AVHRR (MetOp-A, -B, -C). The horizontal extent of the SAL can be monitored using dust RGB imagery, channel differencing (e.g., 10.33 µm -- 12.30 µm), and Aerosol Optical Depth (AOD) retrievals. Additionally, microwave and infrared sounding (CrIS, ATMS, AMSU, and IASI) are particularly useful for SAL monitoring because sounder products can detect both the horizontal and vertical distribution of the dry air mass.
 
 \section{What is NUCAPS?}\label{what-is-nucaps}
@@ -303,9 +312,9 @@ SAL and to verify model predictions for SAL propagation.
 \section{Where can I get NUCAPS
 datasets?}\label{where-can-i-get-nucaps-datasets}
 
-Data can be ordered from
+For researchers, NOAA-20 and Suomi NPP NUCAPS data can be ordered from
 \href{https://www.bou.class.noaa.gov/saa/products/search?sub_id=0\&datatype_family=JPSS_SND\&submit.x=24\&submit.y=7}{NOAA
-CLASS}, under the JPSS Sound Products (JPSS\_SND) drop down menu.
+CLASS}, under the JPSS Sound Products (JPSS\_SND) drop down menu. For operational forecasters, NOAA-20 NUCAPS is available within 20 mintes through in AWIPS.
 
 \section{How can I visualize NUCAPS
 datasets?}\label{how-can-i-visualize-nucaps-datasets}
@@ -688,19 +697,6 @@ now we have more granules to look at in our plot:
 Split Window Difference (10.33 µm -- 12.30 µm) in Figure \ref{fig:split}, we can confirm the
 presense of the SAL.
 
-\section{Conclusions}\label{conclusions}
-
-\begin{itemize}
-  \tightlist
-  \item
-    The Saharan Air Layer can be seen from space using visible and infrared imagery and products. Hyperspectral sounding data can be used to see both the vertical and horizontal extent.
-  \item
-    NUCAPS is useful for examining the moisture and temperature structure of SAL events.
-  \item
-    Both code and web-based tools can be used and data are freely
-    available online for monitoring potential SAL cases.
-  \end{itemize}
-
 \begin{figure}[h]
 \centering
 \includegraphics{images/20180920.15.NWAtlantic.SALgoes16split.png}
@@ -708,4 +704,16 @@ presense of the SAL.
 \label{fig:split}
 \end{figure}
 
+\section{Summary}\label{conclusions}
+
+\begin{itemize}
+  \tightlist
+  \item
+    The Saharan Air Layer (SAL) can be seen from space using visible and infrared imagery and products. Hyperspectral sounding data can be used to see both the vertical and horizontal extent in near real-time.
+  \item
+    NUCAPS is useful for examining the moisture and temperature structure of SAL events.
+  \item
+    Both code and web-based tools are useful for visualizating the SAL. For researchers, Suomi NPP and NOAA-20 NUCAPS are available via \href{https://www.bou.class.noaa.gov/saa/products/search?sub_id=0\&datatype_family=JPSS_SND\&submit.x=24\&submit.y=7}{NOAA
+    CLASS} with a three-hour latency. For operational forecasters, NOAA-20 NUCAPS is available within 20 minutes in AWIPS.
+  \end{itemize}
 \end{document}
